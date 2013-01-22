@@ -6,13 +6,15 @@ class Item {
 	private $expiration_timestamp;
 	private $slab;
 	private $size;
+	private $value;
 
-	public function __construct($key, $slab, $expiration_timestamp, $size){
+	public function __construct($key, $slab, $expiration_timestamp, $size, $value){
 
 		$this->key = $key;
 		$this->slab = $slab;
 		$this->expiration_timestamp = $expiration_timestamp;
 		$this->size = $size;
+                $this->value = $value;
 
 	}//constructor
 
@@ -30,6 +32,10 @@ class Item {
 
 	public function getTimestamp(){
 		return $this->expiration_timestamp;
+	}
+
+	public function getValue(){
+		return $this->value;
 	}
 
 

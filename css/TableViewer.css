@@ -97,6 +97,10 @@ table#TableViewer tr td.size {
         text-align:right;
 }
 
+table#TableViewer tr td.value {
+        text-align:right;
+}
+
 table#TableViewer tr td.expiry_date {
 }
 
